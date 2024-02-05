@@ -67,8 +67,6 @@ const renderReleases = () => {
     card.classList.add('releases__card');
     card.appendChild(figure);
 
-    // const rate = document.createElement('p');
-
     return card;
   });
   htmlReleases.forEach((card) => releasesContainer.appendChild(card));

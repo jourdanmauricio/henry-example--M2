@@ -11,12 +11,14 @@ html {
 }
 
 body {
-  height: 300vh;
   font-family: sans-serif;
   background-color: var(--background);
 }
 
 /* MENU */
+.menu-mobile {
+  display: none;
+}
 .topmenu {
   display: flex;
   justify-content: flex-end;
@@ -38,6 +40,9 @@ body {
 }
 
 /* MENU */
+.active {
+  background-color: red;
+}
 .menu {
   position: sticky;
   top: 0;
@@ -81,15 +86,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .menu__logo h1 {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-family: 'Bitter', serif;
+  font-weight: 700;
 }
 
 .menu__item {
-  /* color: var(--primary); */
   color: #1e1b4b;
   cursor: pointer;
 }
@@ -167,8 +173,8 @@ body {
 }
 
 .card__icon img {
-  width: 1.7rem;
-  height: 1.7rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .releases__card:hover .releases__figcaption {
@@ -195,4 +201,49 @@ body {
   align-self: center;
   font-weight: bold;
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 900px) {
+  .topmenu {
+    display: none;
+  }
+  .menu__logo h1 {
+    display: none;
+  }
+  .gallery img:hover {
+    width: 200px;
+  }
+  .menu__mobile {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .menu__items {
+    position: fixed;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 5rem;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    transition: all 400ms;
+    background-color: var(--primary);
+  }
+
+  .menu__item {
+    color: var(--background);
+  }
+  .menu__back {
+    background-color: #00000099;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+  }
 }

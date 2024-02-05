@@ -5,7 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Descubre las mejores críticas de películas y series en El Ojo Crítico. Análisis en profundidad, opiniones honestas y recomendaciones personalizadas. ">
+    content="Descubre las mejores críticas de películas y series en El Ojo Crítico. Análisis en profundidad, opiniones honestas y recomendaciones personalizadas">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="icon" type="image/png" href="./assets/favicon.jpg" />
@@ -16,31 +20,32 @@
   <!-- TOPMENU -->
   <header class="topmenu">
     <div class="topmenu__social">
-      <img src="./assets/facebook.svg" alt="Facebook button">
-      <img src="./assets/instagram.svg" alt="Instagram button">
-      <img src="./assets/twitter.svg" alt="Twitter button">
+      <img src="/assets/facebook.svg" alt="Facebook button">
+      <img src="/assets/instagram.svg" alt="Instagram button">
+      <img src="/assets/twitter.svg" alt="Twitter button">
     </div>
   </header>
 
   <!-- MENU -->
   <nav class="menu">
-    <a href="index.html">
+    <div id="menu-back" class="menu__back"></div>
+    <a href="/">
       <div class="menu__logo">
-        <img src="./assets/favicon.png" alt="Logo">
+        <img src="/assets/favicon.png" alt="Logo">
         <h1>El ojo crítico</h1>
       </div>
     </a>
-    <ul class="menu__items">
-      <li class="menu__item">NOTICIAS</li>
-      <li class="menu__item"><a href="#releases">ESTRENOS</a></li>
-      <li class="menu__item"><a href="./Pages/blog.html">BLOG</a></li>
-      <li class="menu__item">ULTIMOS TRAILERS</li>
+    <ul id="menu-items" class="menu__items">
+      <li class="menu__item"><a href="/index.html#news">NOTICIAS</a></li>
+      <li class="menu__item"><a href="/index.html#releases">ESTRENOS</a></li>
+      <li class="menu__item"><a href="/Pages/blog">BLOG</a></li>
+      <li class="menu__item"><a href="/index.html#trailers">ULTIMOS TRAILERS</a></li>
     </ul>
     <div class="menu__search">
       <input type="text" placeholder="Buscar película...">
       <img src="./assets/search.svg" alt="Search button">
     </div>
-
+    <button id="menu-mobile" class="menu__mobile"><img src="/assets/menu.svg" alt="Open Mobile Menu"></button>
   </nav>
   <main>
     <section class="gallery">
@@ -59,9 +64,16 @@
 
       </section>
     </section>
+    <section id="news" class="releases__week">
+      <h2>Noticias</h2>
+    </section>
+    <section id="trailers" class="releases__week">
+      <h2>Trialers</h2>
+    </section>
   </main>
   <script src="./scripts/tempData.js"></script>
   <script src="./scripts/index.js"></script>
+  <script src="./scripts/menu.js"></script>
 
 </body>
 
