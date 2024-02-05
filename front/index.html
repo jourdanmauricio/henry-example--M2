@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Descubre las mejores críticas de películas y series en El Ojo Crítico. Análisis en profundidad, opiniones honestas y recomendaciones personalizadas. ">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="icon" type="image/png" href="./assets/favicon.jpg" />
+  <title>El Ojo Crítico</title>
+</head>
+
+<body>
+  <!-- TOPMENU -->
+  <header class="topmenu">
+    <div class="topmenu__social">
+      <img src="./assets/facebook.svg" alt="Facebook button">
+      <img src="./assets/instagram.svg" alt="Instagram button">
+      <img src="./assets/twitter.svg" alt="Twitter button">
+    </div>
+  </header>
+
+  <!-- MENU -->
+  <nav class="menu">
+    <div class="menu__logo">
+      <img src="./assets/favicon.png" alt="Logo">
+      <h1>El ojo crítico</h1>
+    </div>
+    <ul class="menu__items">
+      <li class="menu__item">NOTICIAS</li>
+      <li class="menu__item">ESTRENOS</li>
+      <li class="menu__item">BLOG</li>
+      <li class="menu__item">ULTIMOS TRAILERS</li>
+    </ul>
+    <div class="menu__search">
+      <input type="text" placeholder="Buscar película...">
+      <img src="./assets/search.svg" alt="Search button">
+    </div>
+
+  </nav>
+  <main>
+    <section class="gallery">
+      <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/3OdMJBOGkp62e0DfY4ZykL9RuCP.jpg" alt="">
+      <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/cND79ZWPFINDtkA8uwmQo1gnPPE.jpg" alt="">
+      <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/gh2bmprLtUQ8oXCSluzfqaicyrm.jpg" alt="">
+      <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/79wPBxEn6z1WSjAaACR0VCktv15.jpg" alt="">
+      <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/nrSaXF39nDfAAeLKksRCyvSzI2a.jpg" alt="">
+      <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vd9uj5KLlOrJnvNH03exLDlMAE0.jpg" alt="">
+
+    </section>
+
+    <section class="releases__week">
+      <h2>Estrenos de la semana</h2>
+      <section id="releases-container" class="releases__container">
+
+      </section>
+    </section>
+  </main>
+  <script src="./scripts/tempData.js"></script>
+  <script src="./scripts/index.js"></script>
+
+</body>
+
+</html>
