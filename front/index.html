@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -24,14 +24,16 @@
 
   <!-- MENU -->
   <nav class="menu">
-    <div class="menu__logo">
-      <img src="./assets/favicon.png" alt="Logo">
-      <h1>El ojo crítico</h1>
-    </div>
+    <a href="index.html">
+      <div class="menu__logo">
+        <img src="./assets/favicon.png" alt="Logo">
+        <h1>El ojo crítico</h1>
+      </div>
+    </a>
     <ul class="menu__items">
       <li class="menu__item">NOTICIAS</li>
-      <li class="menu__item">ESTRENOS</li>
-      <li class="menu__item">BLOG</li>
+      <li class="menu__item"><a href="#releases">ESTRENOS</a></li>
+      <li class="menu__item"><a href="./Pages/blog.html">BLOG</a></li>
       <li class="menu__item">ULTIMOS TRAILERS</li>
     </ul>
     <div class="menu__search">
@@ -51,7 +53,7 @@
 
     </section>
 
-    <section class="releases__week">
+    <section id="releases" class="releases__week">
       <h2>Estrenos de la semana</h2>
       <section id="releases-container" class="releases__container">
 
