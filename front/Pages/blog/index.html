@@ -5,57 +5,223 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Descubre las mejores críticas de películas y series en El Ojo Crítico. Análisis en profundidad, opiniones honestas y recomendaciones personalizadas. ">
+    content="Descubre las mejores críticas de películas y series en El Ojo Crítico. Análisis en profundidad, opiniones honestas y recomendaciones personalizadas">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="/styles/reset.css">
   <link rel="stylesheet" href="/styles/style.css">
-  <link rel="icon" type="image/png" href="/assets/favicon.jpg" />
+  <link rel="icon" type="image/png" href="/assets/icons/favicon.jpg" />
   <title>El Ojo Crítico</title>
 </head>
 
 <body>
   <!-- TOPMENU -->
   <header class="topmenu">
+    <span>👀 Únete al Grupo de <a href="#">Telegram</a> para recibir notificaciones de nuevos estrenos o hacer
+      peticiones</span>
     <div class="topmenu__social">
-      <img src="/assets/facebook.svg" alt="Facebook button">
-      <img src="/assets/instagram.svg" alt="Instagram button">
-      <img src="/assets/twitter.svg" alt="Twitter button">
+      <img src="/assets/icons/facebook.svg" alt="Facebook button">
+      <img src="/assets/icons/instagram.svg" alt="Instagram button">
+      <img src="/assets/icons/twitter.svg" alt="Twitter button">
     </div>
   </header>
 
   <!-- MENU -->
+  <div id="menu-back" class="menu__back"></div>
   <nav class="menu">
-    <div id="menu-back" class="menu__back"></div>
     <a href="/">
       <div class="menu__logo">
-        <img src="/assets/favicon.png" alt="Logo">
+        <img src="/assets/icons/favicon.png" alt="Logo">
         <h1>El ojo crítico</h1>
       </div>
     </a>
     <ul id="menu-items" class="menu__items">
       <li class="menu__item"><a href="/index.html#news">NOTICIAS</a></li>
-      <li class="menu__item"><a href="/index.html#releases">ESTRENOS</a></li>
+      <li class="menu__item"><a href="/index.html#recommended">RECOMENDADAS</a></li>
       <li class="menu__item"><a href="/Pages/blog">BLOG</a></li>
       <li class="menu__item"><a href="/index.html#trailers">ULTIMOS TRAILERS</a></li>
     </ul>
     <div class="menu__search">
       <input type="text" placeholder="Buscar película...">
-      <img src="/assets/search.svg" alt="Search button">
+      <img src="/assets/icons/search.svg" alt="Search button">
     </div>
 
-    <button id="menu-mobile" class="menu__mobile"><img src="/assets/menu.svg" alt="Open Mobile Menu"></button>
+    <button id="menu-mobile" class="menu__mobile"><img src="/assets/icons/menu.svg" alt="Open Mobile Menu"></button>
   </nav>
-  <main>
-    <h1>Blog</h1>
 
-    <ul>
-      <li><a href="/Pages/blog/monetizar-stream-series-tv-peliculas.html">¿Cómo monetizar sitios web de stream de series
-          de TV y películas?
-        </a></li>
-      <li><a href="/Pages/blog/fta-free-tv.html">Free To Air - Contenido satelital gratuito</a></li>
-    </ul>
+
+  <!-- <div class="container py-4"> -->
+  <div class="card" style="height: 50vh">
+    <img class="card-img hero-img" src="/assets/images/blog-hero.jpg" alt="">
+    <div
+      class="card-body d-flex flex-column align-items-center justify-content-center card-img-overlay text-light text-center">
+      <h1 class="display-4 card-title">El Blog del ojo crítico</h1>
+      <p class="display-6 mt-1">Opiniones, tendencias, información y mucho más</p>
+    </div>
+  </div>
+  </div>
+
+  <!-- </div> -->
+  <main class="container mt-5">
+    <div class="card mb-3 mx-auto">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="/assets/images/monetizar-stream.jpg" class="blog__img"
+            alt="Monetizando stream de series y películas" />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h3 class="card-title"> <a href="/Pages/blog/monetizar-stream-series-tv-peliculas.html"> ¿Cómo monetizar
+                sitios web de stream de series de TV y películas?</a></h3>
+            <p class="card-text text-black-50">
+              El negocio de las páginas web que muestran series de TV es un mercado en auge, con un gran número de
+              jugadores
+              compitiendo por una audiencia global
+            </p>
+
+            <p class="card-text text-black-50">
+              Algunos de los competidores más fuertes del mercado son:
+            <ul class="text-black-50">
+              <li>Netflix</li>
+              <li>HBO Max</li>
+              <li>Amazon Prime Video </li>
+            </ul>
+            </p>
+          </div>
+        </div>
+        <div class="card-footer text-center mt-auto">
+          <small class="text-muted"><a href="/Pages/blog/monetizar-stream-series-tv-peliculas.html">Seguir
+              leyendo</a></small>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="/assets/images/fta.jpg" class="card-img-top" alt="Antenas satelitales" />
+          <div class="card-body">
+            <h5 class="card-title"><a href="/Pages/blog/fta-free-tv.html">Free To Air - Contenido satelital
+                gratuito</a></h5>
+            <p class="card-text text-black-50">
+              FTA Satelital: Televisión gratuita desde el espacio
+              El FTA satelital, o Free to Air satelital, es una forma de acceder a canales de televisión gratuitos a
+              través de
+              una
+              antena parabólica y un receptor satelital
+            </p>
+          </div>
+          <div class="card-footer text-center">
+            <small class="text-muted"><a href="/Pages/blog/fta-free-tv.html">Seguir leyendo</a></small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/assets/images/internet-satelital.jpg" class="card-img-top" alt="Huella de satélites sudamerica" />
+          <div class="card-body">
+            <h5 class="card-title"><a href="/Pages/blog/internet-satelital.html">Un paso más allá. Internet
+                Satelital</a></h5>
+            <p class="card-text text-black-50">
+              Internet satelital: una conexión global
+              Internet satelital te permite conectarte a internet sin depender de cables o fibra óptica. Funciona a
+              través de
+              satélites en órbita que envían y reciben señales desde antenas parabólicas instaladas en tu hogar o
+              negocio.
+            </p>
+          </div>
+          <div class="card-footer text-center">
+            <small class="text-muted"><a href="/Pages/blog/internet-satelital.html">Seguir
+                leyendo</a></small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/assets/images/orientar-antena.jpg" class="card-img-top" alt="¿Cómo orientar la antena?" />
+          <div class="card-body">
+            <h5 class="card-title"><a href="/Pages/blog/orientar-antena-satelital.html">Guía para orientar la antena
+                parabólica</a></h5>
+            <p class="card-text text-black-50">
+              Para orientar una antena satelital, necestas algunos materiales:
+            <p class="card-text text-black-50">
+              Antena parabólica, LNB, Cable coaxial, Receptor de satélite, Brújula,
+              Inclinómetro
+            </p>
+            </p>
+          </div>
+          <div class="card-footer text-center">
+            <small class="text-muted"><a href="/Pages/blog/orientar-antena-satelital.html">Seguir leyendo</a></small>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
+  <footer class="container-fluid text-white mt-5 bg-dark">
+    <div class="row text-center p-3">
+      <div class="col-12 col-md-4 mx-auto mt-5 mt-md-0">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
+          El ojo crítico
+        </h5>
+        <p class="text-light">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Accusantium voluptates accusamus illum, commodi fugit optio
+          tempore quo ex maiores
+        </p>
+      </div>
+
+      <div class="col-12 col-md-4 mx-auto mt-5 mt-md-0">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-center text-warning">
+          Links utiles
+        </h5>
+        <p class="text-center mb-1">
+          <a href="/" class="text-light">Inicio</a>
+        </p>
+        <p class="text-center mb-1">
+          <a href="/index.html#news" class="text-light">Noticias</a>
+        </p>
+        <p class="text-center mb-1">
+          <a href="/index.html#recommended" class="text-white">Recomendadas</a>
+        </p>
+        <p class="text-center mb-1">
+          <a href="/Pages/blog/" class="text-white">Blog</a>
+        </p>
+        <p class="text-center mb-1">
+          <a href="/index.html#trailers.html" class="text-white">Últimos trailers</a>
+        </p>
+      </div>
+
+      <div class="col-12 col-md-4 mb-3 mt-5 mt-md-0">
+        <form id="subscriber-form" method="POST">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
+            Newsletter
+          </h5>
+          <p class="text-light">
+            Resumen semanal de novedades
+          </p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2 pt-4">
+            <label for="newsletter1" class="visually-hidden text-white"></label>
+            <input id="newsletter1" type="email" name="email" id="email" class="form-control bg-dark text-white"
+              placeholder="Email" />
+            <button type="submit" class="btn btn-primary">
+              Suscribete
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="d-flex flex-column flex-sm-row justify-content-center p-2 border-top">
+      <small class="text-light">© 2024 El ojo crítico. Derechos reservados</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
   <script src="/scripts/menu.js"></script>
+
 </body>
 
 </html>

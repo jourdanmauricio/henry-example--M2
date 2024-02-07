@@ -6,110 +6,222 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
     content="Descubre las mejores críticas de películas y series en El Ojo Crítico. Análisis en profundidad, opiniones honestas y recomendaciones personalizadas. ">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="/styles/reset.css">
   <link rel="stylesheet" href="/styles/style.css">
-  <link rel="icon" type="image/png" href="/assets/favicon.jpg" />
+  <link rel="icon" type="image/png" href="/assets/icons/favicon.jpg" />
   <title>El Ojo Crítico</title>
 </head>
 
 <body>
   <!-- TOPMENU -->
   <header class="topmenu">
+    <span>👀 Únete al Grupo de <a href="#">Telegram</a> para recibir notificaciones de nuevos estrenos o hacer
+      peticiones</span>
     <div class="topmenu__social">
-      <img src="/assets/facebook.svg" alt="Facebook button">
-      <img src="/assets/instagram.svg" alt="Instagram button">
-      <img src="/assets/twitter.svg" alt="Twitter button">
+      <img src="/assets/icons/facebook.svg" alt="Facebook button">
+      <img src="/assets/icons/instagram.svg" alt="Instagram button">
+      <img src="/assets/icons/twitter.svg" alt="Twitter button">
     </div>
   </header>
 
   <!-- MENU -->
+  <div id="menu-back" class="menu__back"></div>
   <nav class="menu">
-    <div id="menu-back" class="menu__back"></div>
     <a href="/">
       <div class="menu__logo">
-        <img src="/assets/favicon.png" alt="Logo">
+        <img src="/assets/icons/favicon.png" alt="Logo">
         <h1>El ojo crítico</h1>
       </div>
     </a>
     <ul id="menu-items" class="menu__items">
       <li class="menu__item"><a href="/index.html#news">NOTICIAS</a></li>
-      <li class="menu__item"><a href="/index.html#releases">ESTRENOS</a></li>
+      <li class="menu__item"><a href="/index.html#recommended">RECOMENDADAS</a></li>
       <li class="menu__item"><a href="/Pages/blog">BLOG</a></li>
       <li class="menu__item"><a href="/index.html#trailers">ULTIMOS TRAILERS</a></li>
     </ul>
     <div class="menu__search">
       <input type="text" placeholder="Buscar película...">
-      <img src="/assets/search.svg" alt="Search button">
+      <img src="/assets/icons/search.svg" alt="Search button">
     </div>
-    <button id="menu-mobile" class="menu__mobile"><img src="/assets/menu.svg" alt="Open Mobile Menu"></button>
+    <button id="menu-mobile" class="menu__mobile"><img src="/assets/icons/menu.svg" alt="Open Mobile Menu"></button>
   </nav>
 
-  <main>
-    <img width="400px" src="/assets/images/fta.jpg" alt="Imagen" style="float: left;">
+  <main class="container pt-5">
+    <img width="400px" src="/assets/images/fta.jpg" alt="Imagen" class="float-start me-4 mb-4">
 
     <h2>Free To Air - Contenido satelital gratuito</h2>
 
-    <p>
-      FTA Satelital: Televisión gratuita desde el espacio
-      El FTA satelital, o Free to Air satelital, es una forma de acceder a canales de televisión gratuitos a través de
-      una
-      antena parabólica y un receptor satelital. Al igual que la televisión FTA terrestre, no requiere de una
-      suscripción
-      o
-      pago mensual.
-    </p>
+    <p class="mt-2">
+      FTA Satelital: Televisión gratuita desde el espacio. El FTA satelital, o Free to Air satelital, es una forma de
+      acceder a canales de televisión y radio gratuitos a través de una antena parabólica y un receptor satelital.</p>
+
+    <p class="mt-1">Al igual que la televisión FTA terrestre (en Argentina llamada TDT, Television Digital Terrestre),
+      no requiere de una suscripción o pago mensual.</p>
+
+    <p>Los satélites suelen transmitir canales libres (sin encriptar) y otros encriptados. En estos últimos,
+      generalmente se requiere el pago de una suscrpción.</p>
 
     <h3>¿Cómo funciona el FTA satelital?</h3>
-    <p>
-      Señales FTA: Los satélites transmiten señales de televisión sin encriptar, disponibles para cualquier persona
-      con
-      el
-      equipo adecuado.
-      Antena parabólica: Capta las señales del satélite y las concentra en un punto.
-      Receptor satelital: Decodifica la señal y la envía al televisor.
-    </p>
+
+    <p class="mt-4">Los satélites transmiten señales de televisión sin encriptar, disponibles para
+      cualquier persona con el equipo adecuado que desee recepcionarlas.</p>
+
+    <p>El flujo básico de la transmisión/recepción es el siguiente: </p>
+
+    <img class="mx-auto my-4 rounded" src="/assets/images/fta2.jpg" alt="Cómo funciona la TV FTA">
+
+    <ol>
+      <li>
+        <p>Las señales de televisión se transmiten desde una estación terrestre al satélite.</p>
+      </li>
+      <li>
+        <p>El satélite retransmite las señales de vuelta a la Tierra. En este punto, nos interesa saber si nuestra
+          ubicación se encuentra dentro de la pisada o huella del satélite, si posee señales no encriptadas y de acuerdo
+          a la lejanía del satélite, el tamaño de antena parabólica que necesitamos.</p>
+      </li>
+      <li>La antena parabólica capta las señales del satélite y las concentra en el LNB. Es importante que la
+        orientación de la antena sea la correcta, para recibir la señal con la mayor intensidad posible.</li>
+      <li>El LNB amplifica la señal y la envía al receptor de satélite a través del cable coaxial.</li>
+      <li>El receptor de satélite decodifica la señal y la envía al televisor. Existe variedad de fabricantes de
+        receptores. Los receptores para FTA (no de coodificaremos señales encriptadas de servicios con abono), son
+        económicos.</li>
+    </ol>
 
     <h3>¿Qué necesitas para acceder a FTA satelital?</h3>
-    <ul>
-      <li>Antena parabólica: El tamaño depende de la ubicación y la cantidad de canales que deseas recibir</li>
+    <ul class="mt-4">
       <li>
-        Receptor satelital: Debe ser compatible con el tipo de señal que deseas recibir (DVB-S, DVB-S2, etc.)
+        <p><strong>Antena parabólica:</strong> El tamaño depende de la ubicación y la cantidad de canales que deseas
+          recibir</p>
       </li>
-      <li>Cable coaxial: Para conectar la antena al receptor</li>
-      <li>Televisor: Con entrada HDMI o RCA</li>
+      <li>
+        <p><strong>Receptor satelital:</strong> Debe ser compatible con el tipo de señal que deseas recibir (DVB-S,
+          DVB-S2, etc.). En una futura nota del blog mencionaremos los mejores receptores que se encuentran disponibes
+          en el mercado.
+        </p>
+      </li>
+      <li>
+        <p><strong>Cable coaxial:</strong> Para conectar la antena al receptor. Generalmente,se utiliza RG-6 de buena
+          calidad.</p>
+      </li>
+      <li>
+        <p><strong>Televisor:</strong> Con entrada HDMI o RCA</p>
+      </li>
     </ul>
     <h3>¿Qué ventajas ofrece el FTA satelital?</h3>
-    <p>
+    <p class="mt-4">
       Acceso a una mayor variedad de canales: Puedes recibir canales de todo el mundo, incluyendo canales nacionales,
       regionales, locales e internacionales.
+    </p>
+    <p>
       Mejor calidad de imagen y sonido: La señal satelital suele ser de mayor calidad que la señal terrestre.
+    </p>
+    <p>
       No requiere conexión a internet: Ideal para zonas rurales o con acceso limitado a internet.
     </p>
-    <h3>¿Qué desventajas tiene el FTA satelital?</h3>
-    <p>
-      Costo inicial del equipo: La antena parabólica y el receptor satelital pueden ser costosos.
-      Requiere conocimientos técnicos: La instalación y configuración del equipo puede ser compleja.
-      Sensibilidad a las condiciones climáticas: La lluvia y el viento pueden afectar la calidad de la señal.
     </p>
-    <h3>
+    <h3>¿Qué desventajas tiene el FTA satelital?</h3>
+    <p class="mt-4">
+      Costo inicial del equipo: La antena parabólica y el receptor satelital pueden ser costosos.
+    </p>
+    <p class="mt-4">
+      Requiere conocimientos técnicos: La instalación y configuración del equipo puede ser compleja. Este es nuestro
+      hobby, recuerda que existe una comunidad con gran cantidad de aficionados, que siempre estarán dispuestos a
+      colaborar. Si solo deseamos sentarnos a disfrutar de la TV, existen servicios privados que realizan la instalación
+      por nosotros.
+    </p>
+    <p class="mt-4">
+      Sensibilidad a las condiciones climáticas: La lluvia y el viento pueden afectar la calidad de la señal. Debemos
+      utilizar la mejor calidad de materiles para minimizar los inconvenientes.
+    </p>
 
+    <h3>
       ¿Es el FTA satelital adecuado para ti?
     </h3>
-    <p>Si buscas una forma de acceder a una mayor variedad de canales de televisión gratuitos y no te importa invertir
-      en el equipo necesario, el FTA satelital puede ser una buena opción para ti
-    </p>
-    <h3>
-      Recursos adicionales:
-    </h3>
-    <p>Lista de satélites FTA:
-      Guía de instalación de FTA satelital:
+    <p class="mt-4">Si buscas una forma de acceder a una mayor variedad de canales de televisión gratuitos y no te
+      importa invertir en el equipo necesario, el FTA satelital puede ser una buena opción para ti.
     </p>
 
-    <p>Recuerda que la disponibilidad de canales FTA satelitales varía según la ubicación y el tipo de antena que uses.
-      Investiga qué canales están disponibles en tu zona antes de invertir en el equipo.
+    <p class="mt-4">Existe gran cantidad de foros donde encontrar información sobre qué satelites se encuentran a
+      nuestro alcance, equipos, antenas, etc. Algunos de ellos son:
+    <ul>
+      <li><a href="https://www.ftatv.org/foro" target="_blank" rel="noopener noreferrer">https://www.ftatv.org/foro/</a>
+      </li>
+      <li><a href=" https://ftapinamar.blogspot.com" target="_blank"
+          rel="noopener noreferrer">https://ftapinamar.blogspot.com</a></li>
+      <li><a href=" https://tdtlatinoamerica.com.ar" target="_blank"
+          rel="noopener noreferrer">https://tdtlatinoamerica.com.ar</a></li>
+    </ul>
+    </p>
 
+    <img class=" mx-auto" src="/assets/images/fta-pisada.png" alt="Imágen Lyngsat Satélites/Canales en Argentina">
+    <p class="mt-4">Recuerda que la disponibilidad de canales FTA satelitales varía según la ubicación y el tipo
+      de
+      antena que uses. Investiga qué canales están disponibles en tu zona antes de invertir en el equipo. En este
+      sentido Lyngsat nos brinda una gran herramienta.
     </p>
   </main>
+
+  <footer class=" container-fluid text-white mt-5 bg-dark">
+    <div class="row text-center p-3">
+      <div class="col-12 col-md-4 mx-auto mt-5 mt-md-0">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
+          El ojo crítico
+        </h5>
+        <p class="text-light">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Accusantium voluptates accusamus illum, commodi fugit optio
+          tempore quo ex maiores
+        </p>
+      </div>
+
+      <div class="col-12 col-md-4 mx-auto mt-5 mt-md-0">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-center text-warning">
+          Links utiles
+        </h5>
+        <p class="text-center mb-1">
+          <a href="/" class="text-light">Inicio</a>
+        </p>
+        <p class="text-center mb-1">
+          <a href="/index.html#news" class="text-light">Noticias</a>
+        </p>
+        <p class="text-center mb-1">
+          <a href="/index.html#recommended" class="text-white">Recomendadas</a>
+        </p>
+        <p class="text-center mb-1">
+          <a href="/Pages/blog/" class="text-white">Blog</a>
+        </p>
+        <p class="text-center mb-1">
+          <a href="/index.html#trailers.html" class="text-white">Últimos trailers</a>
+        </p>
+      </div>
+
+      <div class="col-12 col-md-4 mb-3 mt-5 mt-md-0">
+        <form id="subscriber-form" method="POST">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
+            Newsletter
+          </h5>
+          <p class="text-light">
+            Resumen semanal de novedades
+          </p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2 pt-4">
+            <label for="newsletter1" class="visually-hidden text-white"></label>
+            <input id="newsletter1" type="email" name="email" id="email" class="form-control bg-dark text-white"
+              placeholder="Email" />
+            <button type="submit" class="btn btn-primary">
+              Suscribete
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="d-flex flex-column flex-sm-row justify-content-center p-2 border-top">
+      <small class="text-light">© 2024 El ojo crítico. Derechos reservados</small>
+    </div>
+  </footer>
 
   <script src="/scripts/menu.js"></script>
 </body>
